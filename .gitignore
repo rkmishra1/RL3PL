@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Agent/tooling working dirs
+.claude-flow/
+.swarm/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.run.xml
+*.bcf
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# Intermediate editing checkpoints
+*.pre_*.tex
+*.pre_*.bib
+*.pre_*.pdf
+
+# Python
+__pycache__/
+*.pyc

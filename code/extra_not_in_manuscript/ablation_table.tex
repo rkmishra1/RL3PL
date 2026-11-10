@@ -1,0 +1,20 @@
+\begin{table}[!htb]
+\centering
+\caption{Ablation of the E-NSGA-II components on instance 8
+(30 replications, identical evaluation budget; the
+feasibility repair operator is retained in all variants). Best value per
+column in bold. $^{+}$/$^{-}$/$^{=}$ indicate that the full algorithm is
+significantly better/worse/indistinguishable relative to the variant
+(Wilcoxon signed-rank, Holm-corrected, $\alpha=0.05$).}
+\label{tab:Ablation}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Variant & HV (mean $\pm$ sd) & IGD+ (mean $\pm$ sd) & Spread (mean $\pm$ sd) \\
+\midrule
+E-NSGA-II & $(2.1840 \pm 0.0288)\times 10^{12}$ & $(3.5064 \pm 1.3047)\times 10^{4}$ & $0.4727 \pm 0.0368$ \\
+w/o Init & $\mathbf{(2.1903 \pm 0.0341)\times 10^{12}}{}^{=}$ & $\mathbf{(3.2667 \pm 1.5138)\times 10^{4}}{}^{=}$ & $\mathbf{0.4558 \pm 0.0365}{}^{=}$ \\
+w/o Adapt & $(2.1583 \pm 0.0311)\times 10^{12}{}^{+}$ & $(4.7889 \pm 1.4855)\times 10^{4}{}^{+}$ & $0.4615 \pm 0.0325{}^{=}$ \\
+Plain NSGA-II & $(2.1586 \pm 0.0294)\times 10^{12}{}^{+}$ & $(4.3891 \pm 1.3218)\times 10^{4}{}^{+}$ & $0.4709 \pm 0.0337{}^{=}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
