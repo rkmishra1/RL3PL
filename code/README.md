@@ -127,9 +127,3 @@ These concern the manuscript, not the copying. They were found while tracing eac
    mean differs in the third digit, which points to a different reference point. Not traced further.
 6. `fig_sensitivity.py` has the numbers typed in by hand. They agree with `results/sensitivity_results.pkl`.
    In that file the Z2 column for the sorting fractions is identical to the Z2 column for phi_2, which is worth a look.
-
-## Not included
-
-The scripts in `recourse_check/` that only edit the tex or bib file (`apply_exact_budget_edits.py`,
-`apply_minor_edits.py`, `cut_refs.py`, `fit_panel_b.py`, `move_ref_par.py`), the old runs in `runs_OLD_prefix/`,
-and the small `verify_*.py` test snippets from the July session.
