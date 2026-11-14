@@ -87,19 +87,3 @@ cd code/real_data && python3 city_figures.py ../core run_city_studies.py /path/t
 cd code/real_data && python3 city_check.py ../core run_city_studies.py case_studies_results.pkl
 ```
 
-## Changes made to the copies
-
-Only hard-coded paths were changed, in three files. Everything else is a byte copy.
-
-- `core/study.py`: `import sys` was added, and the output folder in `main()` is now the first argument.
-- `simulation/main_study/fill_cms.py` and `fill_manuscript.py`: `import sys` was added, the results folder and the tex file are now arguments, and figures are saved next to the tex file.
-
-## What was checked on 2026-11-10
-
-- All 30 scripts compile. `core/study.py` imports.
-- `exact_table.py` runs on the stored files for instances 4 and 8.
-- `city_figures.py` reproduces the four case-study PNG files in the manuscript folder byte for byte.
-- `city_check.py` reproduces the stored knee values: Delhi (1970.89, 9167.98) and London (998.49, 9319.76).
-- Recomputed from `results/` and compared with the manuscript: CPU table (instances 1 to 3, 8), out-of-sample table, sensitivity table agree.
-- Nothing long was re-run. The full study, the exact runs and the recourse runs were not repeated.
-
